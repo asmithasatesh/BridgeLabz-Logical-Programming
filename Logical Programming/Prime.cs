@@ -18,7 +18,9 @@ namespace Logical_Programming
 
         private static void SimulateStopwatch(int primeNum)
         {
+            //flag-> Prime number. flag->1 Not a prime 
             int flag = 0;
+            //Check if any number less than primeNum is divisible
             for(int i=2;i<Math.Sqrt(primeNum);i++)
             {
                 if(primeNum!=2 && primeNum%i==0)
@@ -27,6 +29,7 @@ namespace Logical_Programming
                     break;
                 }
             }
+            //If primeNum is 2 or flag=0 its prime
             if(primeNum==2 || flag==0)
             {
             Console.WriteLine(primeNum+" is a prime number");
