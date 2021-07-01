@@ -18,16 +18,18 @@ namespace Logical_Programming
 
         private static void PerfectNumver_Compute(int perfectNum)
         {
+            //local variables
             int sum=0,temp;
-            temp = perfectNum;
             for(int i=1;i< perfectNum;i++)
             {
+                //Check if i is divisible by number
                 if(perfectNum%i==0)
                 {
                     sum += i;
                 }    
             }
-            if(sum==temp)
+            //check whether sum of divisible values is equal to Number
+            if(sum==perfectNum)
             {
                 Console.WriteLine("Yes, it is a Perfect Number");
             }

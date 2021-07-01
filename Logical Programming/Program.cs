@@ -8,7 +8,7 @@ namespace Logical_Programming
         {
 
             Console.WriteLine("Enter program number to execute");
-            Console.WriteLine("1.CouponbNumbers\n2.Stopwatch Simulate\n3.Fibonacci Series\n4.Perfect Number\n5.Check prime number");
+            Console.WriteLine("1.CouponbNumbers\n2.Stopwatch Simulate\n3.Fibonacci Series\n4.Perfect Number\n5.Check prime number\n6.Reverse a Number");
             int ch = Convert.ToInt32(Console.ReadLine());
             switch (ch)
             {
@@ -26,6 +26,9 @@ namespace Logical_Programming
                     break;
                 case 5:
                     Prime.ReadInput();
+                    break;
+                case 6:
+                    Reverse_Number.ReadInput();
                     break;
             }
         }
