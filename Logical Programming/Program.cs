@@ -8,7 +8,7 @@ namespace Logical_Programming
         {
 
             Console.WriteLine("Enter the which program to execute");
-            Console.WriteLine("1.CouponbNumbers 2.Stopwatch Simulate 3.Fibonacci Series");
+            Console.WriteLine("1.CouponbNumbers   2.Stopwatch Simulate   3.Fibonacci Series   4.Perfect Number");
             int ch = Convert.ToInt32(Console.ReadLine());
             switch (ch)
             {
@@ -20,6 +20,9 @@ namespace Logical_Programming
                     break;
                 case 3:
                     Fibonacci_Series.ReadInput();
+                    break;
+                case 4:
+                    Perfect_Number.ReadInput();
                     break;
             }
         }
